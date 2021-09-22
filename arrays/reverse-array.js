@@ -1,7 +1,7 @@
+// Source:https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/
 
 
 // Write a program to reverse an array;
-
 /* 
 Input :  arr = [4, 5, 1, 2]
 Output : arr = [2, 1, 5, 4]
