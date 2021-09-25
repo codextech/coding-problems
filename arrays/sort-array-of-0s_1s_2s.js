@@ -20,19 +20,17 @@ function solution(arr) {
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length; j++) {
             let temp = arr[i]
-            console.log(arr[i] , '?? ' ,  arr[j]);
             if (arr[i] < arr[j]) {
                 arr[i] = arr[j];
                 arr[j] = temp;
-            console.log(arr[i] , '>>> ' ,  arr[j]);
-
             }
         }
         
     }
-    console.log(arr);
+    return arr;
 }
 
 
-solution([0, 2, 1 ,2,0])
+const result = solution([0, 2, 1 ,2,0])
+console.log(result);
 
