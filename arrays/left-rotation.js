@@ -15,12 +15,20 @@ arr = [5, 1, 2, 3, 4]
 
 
 
-function rotateLeft(d, arr) {
-
-
+function rotateLeft(d, array) {
+    let n = array.length;
+    for (let rotation = 0; rotation < d; rotation++) {
+        const firstElement = array[0]; // 1
+        for (let index = 0; index < n; index++) {
+            array[index] = array[index+1]
+        }
+        // because last index has no value 
+        array[array.length-1] = firstElement
+    }
+    console.log(array);
 }
 
-rotateLeft(4, [1 ,2 ,3 ,4 ,5])
+rotateLeft(3, [1 ,2 ,3 ,4 ,5])
 
 
 
