@@ -21,5 +21,28 @@ array is 7.
 
 
 
+function solution(arr, k) {
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            let temp = arr[i]
+            if (arr[i] < arr[j]) {
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        
+    }
+    console.log(arr);
+
+    return arr[k-1]
+}
+
+const result = solution([7, 10, 4, 3, 20, 15], 4)
+console.log(result);
+
+
+
+
 
 
